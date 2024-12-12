@@ -38,10 +38,11 @@ const scrollRevealOption = {
     ...scrollRevealOption,
     delay:1000,
   });
-  ScrollReveal().reveal("#header-btn", {
-    ...scrollRevealOption,
-    delay: 1500, // Proper delay for the button
-  });
+ScrollReveal().reveal("#header-btn", {
+  ...scrollRevealOption,
+  delay: 1500, // Delay for the button
+});
+
   
 //banner//
 const banner = document.querySelector(".banner__container");
@@ -82,17 +83,19 @@ ScrollReveal().reveal(".card", {
   ScrollReveal().reveal(".fav-card", {
     ...scrollRevealOption,
     interval: 500,
-  }); ScrollReveal().reveal(".download-img img", {
-    ...scrollRevealOption,
-    interval: 500,
-  });
+  }); 
   ScrollReveal().reveal(".download-text h2", {
     ...scrollRevealOption,
     delay: 500,
-  }); ScrollReveal().reveal(".download-text p", {
+  });
+    ScrollReveal().reveal(".download-img img", {
     ...scrollRevealOption,
-    delay: 1000,
+        interval: 750,
+  });
+    ScrollReveal().reveal(".download-text p", {
+    ...scrollRevealOption,
+    delay: 750,
   }); ScrollReveal().reveal(".contain-image img", {
     ...scrollRevealOption,
-    delay: 1500,
+    delay: 1000,
   });
