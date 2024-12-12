@@ -515,3 +515,129 @@ nav {
     max-width: 350px;
   }
 }
+/*downolad-contain*/
+.download{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 2rem;
+  overflow: hidden;
+  
+}
+.section-contain{
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+.download-img img{
+  max-width: 500px;
+  margin-inline: auto;
+}
+.contain-image{
+   display: flex;
+   justify-content: start;
+   align-items:center;
+   gap: 1rem;
+}
+.contain-image img{
+  max-width: 150px;
+}
+.download-contain h2{
+  margin-bottom: 2rem;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.download-contain p{
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  text-align: left;
+}
+@media (max-width :768px){
+  .download{
+    display: grid;
+    flex-direction: row;
+  }
+  .download-contain h2{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .download-contain p{
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    text-align: center;
+  }
+  .contain-image{
+    display: flex;
+    justify-content: center;
+ }
+}
+.promt{
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+.promt-contain{
+  max-width: 750px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  color: var(--white);
+  text-align: center;
+  padding: 5rem 0rem 5rem 0rem;
+  font-size: 2rem;
+  line-height: 3.25rem;
+}
+.promt-contain p{
+  margin: 1.2rem 0 1.2rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+form{
+  width: 100%;
+  max-width: 400px;
+  margin-inline: auto;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+}
+.promt input{
+  width: 100%;
+  padding-inline: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+@media (max-width:768px){
+  .promt{
+    padding: 0 .5rem 0 .5rem;
+  }
+  .promt-contain p{
+    line-height: 1.2rem;
+  }
+  .promt-contain h2{
+    font-size: 2rem;
+  }
+}
+/*footer*/
+.footer{
+  background-color: var(--text-dark);
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+.footer-contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer ul li a{
+  color: var(--text-light);
+}
+.footer-contain h4{
+  color: var(--white);
+}
