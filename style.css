@@ -334,12 +334,25 @@ nav {
     border-radius: 1rem;
     overflow: hidden;
   }
-  .image img{
-    transition: 0.3sec;
-  }
-  .card .image img{
-    transform: scale(1.1);
-  }
+  /* Style for the card and image container */
+.grid .card .image {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect on the image */
+.grid .card .image img {
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for both */
+}
+
+/* On hover, lift the image */
+.grid .card:hover .image img {
+  transform: translateY(-10px) scale(1.05); /* Lift the image and scale */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
   .contain{
     display: flex;
     align-items: center;
@@ -477,12 +490,25 @@ nav {
   border-radius: 1rem;
   overflow: hidden;
 }
-.fav-image img{
-  transition: 0.3sec;
+/* Style for the fav-card and fav-image container */
+.your-fav .fav-card .fav-image {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease; /* Smooth transition */
 }
-.fav-card:hover .fav-image img {
-  transform: scale(1.1);
+
+/* Hover effect on the image */
+.your-fav .fav-card .fav-image img {
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for both */
 }
+
+/* On hover, lift the image */
+.your-fav .fav-card:hover .fav-image img {
+  transform: translateY(-10px) scale(1.05); /* Lift the image and scale */
+}
+
 .fav-contain{
   display: flex;
   align-items: center;

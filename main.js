@@ -20,6 +20,29 @@ navLinks.addEventListener("click", (e) => {
     }
 });
 
+const scrollRevealOption = {
+    origin: "bottom",   
+    distance: "50px",
+    duration: 1000,     
+  };
+  
+  ScrollReveal().reveal(".hero-image img", {   
+    ...scrollRevealOption,
+    origin: "right",    
+  });
+  ScrollReveal().reveal(".hero-text h1",{
+    ...scrollRevealOption,
+    delay:500,
+  });
+  ScrollReveal().reveal(".hero-text p",{
+    ...scrollRevealOption,
+    delay:1000,
+  });
+  ScrollReveal().reveal("#header-btn", {
+    ...scrollRevealOption,
+    delay: 1500, // Proper delay for the button
+  });
+  
 //banner//
 const banner = document.querySelector(".banner__container");
 
@@ -30,3 +53,46 @@ bannerContent.forEach((item) => {
   duplicateNode.setAttribute("aria-hidden", true);
   banner.appendChild(duplicateNode);
 });
+ScrollReveal().reveal(".card", {
+    ...scrollRevealOption,
+    interval: 500,
+  });
+  
+  ScrollReveal().reveal(".sale-image img", {
+    ...scrollRevealOption,
+    origin: "left",
+  });
+  ScrollReveal().reveal(".sale-contain h2", {
+    ...scrollRevealOption,
+    delay: 500,
+  });
+  ScrollReveal().reveal(".sale-contain p", {
+    ...scrollRevealOption,
+    delay: 1000,
+  });
+  ScrollReveal().reveal(".sale-contain h4", {
+    ...scrollRevealOption,
+    delay: 1000,
+  });
+  ScrollReveal().reveal(".sale-btn", {
+    ...scrollRevealOption,
+    delay: 1500,
+  });
+  
+  ScrollReveal().reveal(".fav-card", {
+    ...scrollRevealOption,
+    interval: 500,
+  }); ScrollReveal().reveal(".download-img img", {
+    ...scrollRevealOption,
+    interval: 500,
+  });
+  ScrollReveal().reveal(".download-text h2", {
+    ...scrollRevealOption,
+    delay: 500,
+  }); ScrollReveal().reveal(".download-text p", {
+    ...scrollRevealOption,
+    delay: 1000,
+  }); ScrollReveal().reveal(".contain-image img", {
+    ...scrollRevealOption,
+    delay: 1500,
+  });
