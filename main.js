@@ -19,11 +19,28 @@ navLinks.addEventListener("click", (e) => {
         menuBtnIcon.setAttribute("class", "ri-menu-line");
     }
 });
+//get the button
+let mybutton = document.getElementById("scrollToTopBtn");
+// Show the button when the user scrolls down
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";  // Show the button
+  } else {
+      mybutton.style.display = "none";  // Hide the button
+  }
+};
 
+// Scroll to the top smoothly when the button is clicked
+mybutton.onclick = function() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'  // Smooth scroll
+  });
+}
 const scrollRevealOption = {
     origin: "bottom",   
     distance: "50px",
-    duration: 1000,     
+    duration: 1500,     
   };
   
   ScrollReveal().reveal(".hero-image img", {   
